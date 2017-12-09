@@ -36,7 +36,7 @@ function getTagMovieList(tagSelected) {
 function checkoutMovie(movieToCheckout){
     let user = localStorage.getItem('currentUser');
     let users = JSON.parse(localStorage.getItem('users'));
-    let curUser = users[user]
+    let curUser = users[user];
     let movieData = JSON.parse(localStorage.getItem('movieData'));
     let movieIndex = 0;
     //Check if movie is already checked out by another user

@@ -6,9 +6,10 @@ const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
 class MovieTags extends Component {
 
-    constructor() {
-        super();
-        this.state = {value: [], tagsSelected:[]}
+    constructor(props) {
+        super(props);
+        this.props.onTagClick(ALL_MOVIES)
+        this.state = {value: [], tagSelected:[]}
     }
 
     getTags(){
@@ -43,7 +44,7 @@ class MovieTags extends Component {
     };
 
     onClick(tag) {
-        this.setState({value: []});
+        this.setState({value: [], tagSelected:[]});
         this.props.onTagClick(tag)
     }
 

@@ -14,9 +14,9 @@ let style = {
 };
 
 class MovieButton extends Component {
-    constructor(){
-        super();
-        this.state = {checkout:false};
+    constructor(props){
+        super(props);
+        this.state = {checkout:props.movieObj.checkout};
     }
 
     componentWillReceiveProps(nextProps){
@@ -27,9 +27,9 @@ class MovieButton extends Component {
         }
     }
 
-    componentDidMount(){
-        this.setState({checkout: this.props.movieObj.checkout})
-    }
+    // componentWillMount(){
+    //     this.setState({checkout: this.props.movieObj.checkout})
+    // }
 
     checkoutButtonClick(){
 
