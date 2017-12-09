@@ -10,7 +10,6 @@ let style = {
     button:{
         background:"#fcf8e8"
     }
-
 };
 
 class MovieButton extends Component {
@@ -20,16 +19,14 @@ class MovieButton extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-        if(nextProps.checkoutRes.success) {
+        if(nextProps.checkoutRes.success){
             if (nextProps.checkoutRes.movie.movieTitle === this.props.movieObj.movieTitle) {
                 this.setState({checkout: nextProps.checkoutRes.success})
             }
+        }else{
+            this.setState({checkout: nextProps.movieObj.checkout})
         }
     }
-
-    // componentWillMount(){
-    //     this.setState({checkout: this.props.movieObj.checkout})
-    // }
 
     checkoutButtonClick(){
 

@@ -19,7 +19,7 @@ class MovieList extends Component {
         return 0;
     }
 
-    returnCheckoutMovies(){
+    getUserCheckoutMovies(){
         //returns a list of all the movies that the user checked out
         let curUser = localStorage.getItem('currentUser');
         let users = JSON.parse(localStorage.getItem('users'));
@@ -29,12 +29,12 @@ class MovieList extends Component {
     renderMovieListRows(){
         let checkout = this.props.checkout;
         let checkoutRes = this.props.checkoutRes;
-        let checkoutMovies = this.returnCheckoutMovies();
+        let userCheckoutMovies = this.getUserCheckoutMovies();
         let onTagClick = this.props.onTagClick;
 
         let movieButtonList = this.props.movieData.sort(this.compare).map(function (obj, idx){
             let isCheckoutByUser = false;
-            if(checkoutMovies.indexOf(obj.movieTitle) > -1)
+            if(userCheckoutMovies.indexOf(obj.movieTitle) > -1)
                 isCheckoutByUser = true;
 
             return <MovieButton movieObj={obj} key={idx} checkout={checkout} onTagClick={onTagClick}
