@@ -22,7 +22,7 @@ class MovieSelectionScreen extends Component {
                     </Row>
                     <Row>
                         <Col className="col-sm-8">
-                            <MovieList movieData={this.props.state.movieData} onTagClick={this.props.actions.onTagClick}
+                            <MovieList tagMovieList={this.props.state.tagMovieList} onTagClick={this.props.actions.onTagClick}
                                        checkout={this.props.actions.checkout} checkoutRes={this.props.state.checkoutRes}/>
                         </Col>
                         <Col className="col-sm-4">

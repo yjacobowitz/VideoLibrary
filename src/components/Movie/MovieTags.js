@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import {Button, ToggleButtonGroup, ToggleButton} from 'react-bootstrap';
-const ALL_MOVIES = "All Movies"
+const ALL_MOVIES = "All Movies";
 
-const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
+const style={
+    well:{
+        maxWidth: 400,
+        margin: '0 auto 10px'
+    },
+    button:{
+        background:"#fcf8e8"
+    }
+};
 
 class MovieTags extends Component {
 
     constructor(props) {
         super(props);
-        this.props.onTagClick(ALL_MOVIES)
+        this.props.onTagClick(ALL_MOVIES);
         this.state = {value: [], tagSelected:[]}
     }
 
     getTags(){
         let tags = [];
-        let movieData = JSON.parse(localStorage.getItem('movieData'))
+        let movieData = JSON.parse(localStorage.getItem('movieData'));
         for(let i=0; i < movieData.length; i++){
             let movie = movieData[i];
             for(let j=0; j < movie.movieTag.length; j++){
@@ -31,7 +39,7 @@ class MovieTags extends Component {
     renderTags(){
         let tags = this.getTags();
         return tags.map(function (tag, idx){
-            return  <ToggleButton bsStyle="primary" value={idx} key={idx}>{tag}</ToggleButton>
+            return  <ToggleButton style={style.button} value={idx} key={idx}>{tag}</ToggleButton>
         });
     }
 
@@ -52,11 +60,11 @@ class MovieTags extends Component {
         return (
             <div>
                 Select Categories:
-                <div className="well" style={wellStyles}>
+                <div className="well" style={style.well}>
                     <ToggleButtonGroup type="checkbox" value={this.state.value} onChange={this.onChange}>
                         {this.renderTags()}
                     </ToggleButtonGroup>
-                    <Button bsSize="large" block
+                    <Button bsSize="large" block bsStyle="warning"
                             onClick={this.onClick.bind(this, this.state.tagSelected)}>Filter Movies</Button>
                 </div>
                 <Button bsSize="large" block onClick={this.onClick.bind(this, ALL_MOVIES)}>{ALL_MOVIES}</Button>

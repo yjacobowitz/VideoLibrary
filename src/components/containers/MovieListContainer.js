@@ -5,7 +5,7 @@ import MovieSelectionScreen from './../views/MovieSelectionScreen'
 
 const mapStateToProps = state => {
     return {
-        movieData: state.movieData,
+        tagMovieList: state.tagMovieList,
         checkoutRes: state.checkoutRes
     }
 };

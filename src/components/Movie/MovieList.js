@@ -26,19 +26,28 @@ class MovieList extends Component {
         return users[curUser].checkedOut
     }
 
+    getMovieData(){
+        return JSON.parse(localStorage.getItem('movieData')).filter((n) => this.props.tagMovieList.includes(n.movieTitle))
+    }
+
     renderMovieListRows(){
         let checkout = this.props.checkout;
         let checkoutRes = this.props.checkoutRes;
         let userCheckoutMovies = this.getUserCheckoutMovies();
         let onTagClick = this.props.onTagClick;
 
-        let movieButtonList = this.props.movieData.sort(this.compare).map(function (obj, idx){
+        let movieButtonList = this.getMovieData().sort(this.compare).map(function (obj, idx){
             let isCheckoutByUser = false;
             if(userCheckoutMovies.indexOf(obj.movieTitle) > -1)
                 isCheckoutByUser = true;
-
+            if(checkoutRes.success){
+                if(checkoutRes.movie.movieTitle === obj.movieTitle){
+                    return <MovieButton movieObj={obj} key={idx} checkout={checkout} onTagClick={onTagClick}
+                                        checkoutRes={checkoutRes} isCheckoutByUser={isCheckoutByUser}/>
+                }
+            }
             return <MovieButton movieObj={obj} key={idx} checkout={checkout} onTagClick={onTagClick}
-                                checkoutRes={checkoutRes} isCheckoutByUser={isCheckoutByUser}/>
+                                isCheckoutByUser={isCheckoutByUser}/>
         });
         let rows = [];
         for(let i=0; i < movieButtonList.length; i += MOVIES_PER_ROW){

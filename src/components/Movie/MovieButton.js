@@ -19,17 +19,25 @@ class MovieButton extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-        if(nextProps.checkoutRes.success){
-            if (nextProps.checkoutRes.movie.movieTitle === this.props.movieObj.movieTitle) {
-                this.setState({checkout: nextProps.checkoutRes.success})
-            }
+        // console.log("tab")
+        // console.log(nextProps)
+        // console.log(this.props)
+        if(nextProps.checkoutRes){
+            this.setState({checkout: nextProps.checkoutRes.movie.checkout})
         }else{
             this.setState({checkout: nextProps.movieObj.checkout})
         }
-    }
-
-    checkoutButtonClick(){
-
+        // if(nextProps.checkoutRes.success){
+        //     if (nextProps.checkoutRes.movie.movieTitle === this.props.movieObj.movieTitle) {
+        //         if(nextProps.movieObj.movieTitle === this.props.movieObj.movieTitle){
+        //             this.setState({checkout: nextProps.checkoutRes.movie.checkout})
+        //         }else{
+        //             this.setState({checkout: nextProps.movieObj.checkout})
+        //         }
+        //     }
+        // }else{
+        //     this.setState({checkout: nextProps.movieObj.checkout})
+        // }
     }
 
     renderMovieTags(){
@@ -48,6 +56,10 @@ class MovieButton extends Component {
          * 3. No one checked out movie - show checkout button
          */
         let buttonTask = "";
+        // console.log("tab")
+        // console.log(this.state.checkout)
+        // console.log(this.props.isCheckoutByUser)
+        // console.log(this.props.movieObj.checkout)
         if(this.props.isCheckoutByUser && this.state.checkout){
             buttonTask = <span className="glyphicon glyphicon-repeat pull-right" aria-hidden="true"/>
         }else if(!this.props.isCheckoutByUser && !this.state.checkout){
