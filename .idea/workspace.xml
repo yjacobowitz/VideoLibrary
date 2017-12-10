@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eb0b780-338b-4076-b55c-d5366b5357c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewQuery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewTable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewTemplate.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieButton.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieTag.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieTag.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieTags.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieTags.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/LoginScreen.js" afterPath="$PROJECT_DIR$/src/components/views/LoginScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" afterPath="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" afterPath="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/RootReducer.js" afterPath="$PROJECT_DIR$/src/reducers/RootReducer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/MovieTabs.js" />
         <option value="$PROJECT_DIR$/src/components/MovieList.js" />
         <option value="$PROJECT_DIR$/src/components/MovieButton.js" />
         <option value="$PROJECT_DIR$/src/reducers/Root.js" />
@@ -124,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/components/Review/ReviewTemplate.js" />
         <option value="$PROJECT_DIR$/src/components/views/LoginScreen.js" />
         <option value="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -330,12 +315,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512392221999</updated>
       <workItem from="1512392223789" duration="124863000" />
-      <workItem from="1512889010232" duration="26794000" />
+      <workItem from="1512889010232" duration="26897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151657000" />
+    <option name="totallyTimeSpent" value="151760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -373,16 +358,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MOVIES_MOCK_DATA.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -774,6 +749,14 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
