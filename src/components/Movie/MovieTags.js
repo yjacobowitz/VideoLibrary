@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import {Button, ToggleButtonGroup, ToggleButton} from 'react-bootstrap';
-const ALL_MOVIES = "All Movies"
-
-const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
+const ALL_MOVIES = "All Movies";
 
 class MovieTags extends Component {
 
-    constructor() {
-        super();
-        this.state = {value: [], tagsSelected:[]}
+    constructor(props) {
+        super(props);
+        this.props.onTagClick(ALL_MOVIES);
+        this.state = {value: []}
     }
 
     getTags(){
         let tags = [];
-        let movieData = JSON.parse(localStorage.getItem('movieData'))
+        let movieData = JSON.parse(localStorage.getItem('movieData'));
         for(let i=0; i < movieData.length; i++){
             let movie = movieData[i];
             for(let j=0; j < movie.movieTag.length; j++){
@@ -30,7 +29,7 @@ class MovieTags extends Component {
     renderTags(){
         let tags = this.getTags();
         return tags.map(function (tag, idx){
-            return  <ToggleButton bsStyle="primary" value={idx} key={idx}>{tag}</ToggleButton>
+            return  <ToggleButton value={idx} key={idx}>{tag}</ToggleButton>
         });
     }
 
@@ -39,26 +38,30 @@ class MovieTags extends Component {
         let tags = this.getTags();
         for(let i in value)
             tagSelected.push(tags[value[i]]);
-        this.setState({ value, tagSelected});
+        this.setState({ value});
+        this.props.onTagClick(tagSelected)
     };
 
-    onClick(tag) {
+    onClick() {
         this.setState({value: []});
-        this.props.onTagClick(tag)
+        this.props.onTagClick(ALL_MOVIES)
     }
 
     render() {
         return (
-            <div>
-                Select Categories:
-                <div className="well" style={wellStyles}>
+            <div className="tagWrap">
+
+                <div className="tagTitle">Select Categories:</div>
+                <div>
                     <ToggleButtonGroup type="checkbox" value={this.state.value} onChange={this.onChange}>
                         {this.renderTags()}
                     </ToggleButtonGroup>
-                    <Button bsSize="large" block
-                            onClick={this.onClick.bind(this, this.state.tagSelected)}>Filter Movies</Button>
+
                 </div>
-                <Button bsSize="large" block onClick={this.onClick.bind(this, ALL_MOVIES)}>{ALL_MOVIES}</Button>
+                <div>
+                    <Button block bsStyle="warning" className="pull-right"
+                            onClick={this.onClick.bind(this)}>Clear</Button>
+                </div>
             </div>
         );
     }

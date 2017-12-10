@@ -1,6 +1,3 @@
-/**
- * Created by yjacobow on 12/6/2017.
- */
 import React, { Component } from 'react';
 import {Row} from 'react-bootstrap'
 import LoginHeader from './../Login/LoginHeader'
