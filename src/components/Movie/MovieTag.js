@@ -1,11 +1,8 @@
-/**
- * Created by yjacobow on 12/5/2017.
- */
 import React, { Component } from 'react';
 import {Button} from 'react-bootstrap'
 
 const style = {
-    background:"#fcf8e8"
+    background:"white"
 };
 
 class MovieTag extends Component {

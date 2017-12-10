@@ -3,11 +3,9 @@ import {Button, PageHeader, Row, Col} from 'react-bootstrap'
 import { connect } from 'react-redux';
 
 const style={
-    title:{
-        fontFamily:"Arial Black",
-    },
     user:{
-        fontFamily:"Verdana"
+        fontFamily:"Verdana",
+        color:"#858585"
     }
 };
 
@@ -23,14 +21,14 @@ class MovieHeader extends Component {
 
     render() {
         return (
-        <div>
+        <div style={{flexGrow:"1"}}>
             <PageHeader>
-                <Row>
+                <Row className="movieSelectionScreenHeader">
                     <Col className="col-sm-4 pull-left">
                         <small style={style.user}>Welcome {this.getCurrentUser()}!</small>
                     </Col>
                     <Col className="col-sm-5">
-                        <div style={style.title}>Movie Selection</div>
+                        <div className="headerTitle">Movie Selection</div>
                     </Col>
                     <Col className="col-sm-3">
                         <Button className="pull-right" onClick={this.logout.bind(this)}>Logout</Button>

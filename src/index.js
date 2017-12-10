@@ -45,7 +45,6 @@ function initiateMovieList(){
 }
 
 initiateMovieList();
-// localStorage.clear();
 render(
     <Provider store={store}>
         <App />

@@ -1,43 +1,37 @@
 import React, { Component } from 'react';
 import {Button, Col, ButtonGroup} from 'react-bootstrap'
 import MovieTag from './MovieTag'
+import ReviewQuery from '../Review/ReviewQuery'
 
 let style = {
     main:{
         height:'150px',
-        background:"#efedd7"
+        background:"#fffaf4"
     },
     button:{
-        background:"#fcf8e8"
+        background:"white"
     }
 };
 
 class MovieButton extends Component {
     constructor(props){
         super(props);
-        this.state = {checkout:props.movieObj.checkout};
+        this.state = {checkout:props.movieObj.checkout, returned:!props.isCheckoutByUser, showReviewModal:false};
     }
 
     componentWillReceiveProps(nextProps){
-        // console.log("tab")
-        // console.log(nextProps)
-        // console.log(this.props)
         if(nextProps.checkoutRes){
             this.setState({checkout: nextProps.checkoutRes.movie.checkout})
         }else{
             this.setState({checkout: nextProps.movieObj.checkout})
         }
-        // if(nextProps.checkoutRes.success){
-        //     if (nextProps.checkoutRes.movie.movieTitle === this.props.movieObj.movieTitle) {
-        //         if(nextProps.movieObj.movieTitle === this.props.movieObj.movieTitle){
-        //             this.setState({checkout: nextProps.checkoutRes.movie.checkout})
-        //         }else{
-        //             this.setState({checkout: nextProps.movieObj.checkout})
-        //         }
-        //     }
-        // }else{
-        //     this.setState({checkout: nextProps.movieObj.checkout})
-        // }
+        if(!this.state.returned){
+            this.setState({showReviewModal:false})
+        }
+    }
+
+    closeReviewModal(){
+        this.setState({showReviewModal: false });
     }
 
     renderMovieTags(){
@@ -48,6 +42,15 @@ class MovieButton extends Component {
         })
     }
 
+    onCheckoutClick(){
+        this.props.checkout(this.props.movieObj.movieTitle)
+        this.setState({returned: !this.state.returned}, ()=>{
+            if(this.state.returned){
+                this.setState({showReviewModal:true});
+            }
+        });
+    }
+
     processButtonTask(){
         /**
          * Checks the following options:
@@ -56,19 +59,15 @@ class MovieButton extends Component {
          * 3. No one checked out movie - show checkout button
          */
         let buttonTask = "";
-        // console.log("tab")
-        // console.log(this.state.checkout)
-        // console.log(this.props.isCheckoutByUser)
-        // console.log(this.props.movieObj.checkout)
         if(this.props.isCheckoutByUser && this.state.checkout){
             buttonTask = <span className="glyphicon glyphicon-repeat pull-right" aria-hidden="true"/>
         }else if(!this.props.isCheckoutByUser && !this.state.checkout){
             buttonTask = <span className="glyphicon glyphicon-shopping-cart pull-right" aria-hidden="true"/>
         }else{
-            return "";
+            return <div style={{color:"red"}}>Movie not available</div>;
         }
         return <Button style={style.button} className="pull-right"
-                       onClick={this.props.checkout.bind(null, this.props.movieObj.movieTitle)}>
+                       onClick={this.onCheckoutClick.bind(this)}>
             {buttonTask}</Button>
 
     }
@@ -79,13 +78,17 @@ class MovieButton extends Component {
                 <Col className="col-xs-4">
                     <div className="thumbnail" style={style.main}>
                             <div className="caption">
-                                {this.processButtonTask()}
-                                <h4>{this.props.movieObj.movieTitle}</h4>
-                                <ButtonGroup>
+                                <div className="title">
+                                    {this.processButtonTask()}
+                                    <h4>{this.props.movieObj.movieTitle}</h4>
+                                </div>
+                                <ButtonGroup className="tags">
                                     {this.renderMovieTags()}
                                 </ButtonGroup>
                             </div>
                     </div>
+                    <ReviewQuery showReviewModal={this.state.showReviewModal} movieTitle={this.props.movieObj.movieTitle}
+                                 closeReviewModal={this.closeReviewModal.bind(this)}/>
                 </Col>
             </div>
         );

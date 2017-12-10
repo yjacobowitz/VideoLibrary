@@ -1,28 +1,91 @@
-.App {
-  text-align: center;
+/*Movie Selection Screen classes*/
+.movieSelectionScreen{
+  background: #fdf8e5;
+  background-image: url("./layouts/layout1.png"), url("./layouts/layout2.png");
+  background-repeat: repeat-x, repeat;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.movieSelectionScreenHeader{
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.headerTitle {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   padding: 20px;
-  color: white;
+  border: none;
+  font: normal 40px/1 "Courier New", Courier, monospace;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 0 0 10px rgb(255,255,255) , 0 0 20px rgb(255,255,255) , 0 0 30px rgb(255,255,255) , 0 0 40px rgba(249,249,249,1) , 0 0 70px rgba(249,249,249,1) , 0 0 80px rgba(249,249,249,1) , 0 0 100px rgba(249,249,249,1) , 0 0 150px rgba(249,249,249,1) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
 }
 
-.App-title {
-  font-size: 1.5em;
+.headerTitle:hover {
+  text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgba(247,191,51,1) , 0 0 35px rgba(247,191,51,1) , 0 0 40px rgba(247,191,51,1) , 0 0 50px rgba(247,191,51,1) , 0 0 75px rgba(247,191,51,1) ;
 }
 
-.App-intro {
-  font-size: large;
+.caption{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.title{
+  flex-grow: 2;
+}
+
+label.btn.btn-default {
+  background: #f7eddf;
+  padding: 4px;
+  margin: 4px;
+  font-size: 13px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button.btn.btn-warning.btn-block {
+  width: 17%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+button.btn.btn-sm.btn-default {
+  padding: 4px;
+  margin: 2px;
+}
+
+.tags.btn-group {
+  display: flex;
+  justify-content: left;
+}
+
+.tagTitle{
+  font-family: inherit;
+  font-size: x-large;
+  text-align: center;
+  color: #858585;
+}
+
+.tagWrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewTable {
+  margin: 40px;
+}
+
+.table {
+  background-color: #f7eddf;
 }

@@ -2,22 +2,12 @@ import React, { Component } from 'react';
 import {Button, ToggleButtonGroup, ToggleButton} from 'react-bootstrap';
 const ALL_MOVIES = "All Movies";
 
-const style={
-    well:{
-        maxWidth: 400,
-        margin: '0 auto 10px'
-    },
-    button:{
-        background:"#fcf8e8"
-    }
-};
-
 class MovieTags extends Component {
 
     constructor(props) {
         super(props);
         this.props.onTagClick(ALL_MOVIES);
-        this.state = {value: [], tagSelected:[]}
+        this.state = {value: []}
     }
 
     getTags(){
@@ -39,7 +29,7 @@ class MovieTags extends Component {
     renderTags(){
         let tags = this.getTags();
         return tags.map(function (tag, idx){
-            return  <ToggleButton style={style.button} value={idx} key={idx}>{tag}</ToggleButton>
+            return  <ToggleButton value={idx} key={idx}>{tag}</ToggleButton>
         });
     }
 
@@ -48,26 +38,30 @@ class MovieTags extends Component {
         let tags = this.getTags();
         for(let i in value)
             tagSelected.push(tags[value[i]]);
-        this.setState({ value, tagSelected});
+        this.setState({ value});
+        this.props.onTagClick(tagSelected)
     };
 
-    onClick(tag) {
-        this.setState({value: [], tagSelected:[]});
-        this.props.onTagClick(tag)
+    onClick() {
+        this.setState({value: []});
+        this.props.onTagClick(ALL_MOVIES)
     }
 
     render() {
         return (
-            <div>
-                Select Categories:
-                <div className="well" style={style.well}>
+            <div className="tagWrap">
+
+                <div className="tagTitle">Select Categories:</div>
+                <div>
                     <ToggleButtonGroup type="checkbox" value={this.state.value} onChange={this.onChange}>
                         {this.renderTags()}
                     </ToggleButtonGroup>
-                    <Button bsSize="large" block bsStyle="warning"
-                            onClick={this.onClick.bind(this, this.state.tagSelected)}>Filter Movies</Button>
+
                 </div>
-                <Button bsSize="large" block onClick={this.onClick.bind(this, ALL_MOVIES)}>{ALL_MOVIES}</Button>
+                <div>
+                    <Button block bsStyle="warning" className="pull-right"
+                            onClick={this.onClick.bind(this)}>Clear</Button>
+                </div>
             </div>
         );
     }

@@ -1,23 +1,6 @@
 const ALL_MOVIES = "All Movies";
 const MAX_MOVIES_TO_CHECKOUT = 5;
 
-function movieTagFilter(movieData){
-    let tags = [];
-    for(let i=0; i < movieData.length; i++){
-        let movie = movieData[i];
-        for(let j=0; j < movie.movieTag.length; j++){
-            let tag = movie.movieTag[j];
-            if(Object.keys(tags).includes(tag)){
-                tags[tag].push(movie);
-            }else{
-                tags[tag] = [];
-                tags[tag].push(movie);
-            }
-        }
-    }
-    return tags;
-}
-
 function getTagMovieList(tagSelected) {
     let movieData = JSON.parse(localStorage.getItem('movieData'));
     let movieTitles = [];

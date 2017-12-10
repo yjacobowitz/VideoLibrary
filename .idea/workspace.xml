@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eb0b780-338b-4076-b55c-d5366b5357c5" name="Default" comment="" />
+    <list default="true" id="4eb0b780-338b-4076-b55c-d5366b5357c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewQuery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewTable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Review/ReviewTemplate.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieButton.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieTag.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Movie/MovieTags.js" afterPath="$PROJECT_DIR$/src/components/Movie/MovieTags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/LoginScreen.js" afterPath="$PROJECT_DIR$/src/components/views/LoginScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" afterPath="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" afterPath="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/RootReducer.js" afterPath="$PROJECT_DIR$/src/reducers/RootReducer.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,112 +34,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MOVIES_MOCK_DATA.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MOVIES_MOCK_DATA.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieSelectionScreen.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-              <folding>
-                <element signature="e#45#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieHeader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieHeader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieDataReducer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/MovieDataReducer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieListContainer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/containers/MovieListContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieButton.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieButton.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,18 +56,23 @@
       <find>7</find>
       <find>kid</find>
       <find>tagsSelected</find>
-      <find>tagSelected</find>
-      <find>consol</find>
       <find>getTags</find>
+      <find>title</find>
+      <find>renderMovieTags</find>
+      <find>tagSelected</find>
+      <find>value</find>
+      <find>returned</find>
+      <find>consol</find>
+      <find>console</find>
+      <find>conso</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/searchMovie.js" />
-        <option value="$PROJECT_DIR$/src/components/MovieSearchBar.js" />
-        <option value="$PROJECT_DIR$/public/manifest.json" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/MovieTabs.js" />
         <option value="$PROJECT_DIR$/src/components/MovieList.js" />
         <option value="$PROJECT_DIR$/src/components/MovieButton.js" />
@@ -179,23 +96,34 @@
         <option value="$PROJECT_DIR$/src/components/views/Header.js" />
         <option value="$PROJECT_DIR$/src/components/Login/LoginHeader.js" />
         <option value="$PROJECT_DIR$/src/components/Login/LoginForm.js" />
-        <option value="$PROJECT_DIR$/src/components/views/LoginScreen.js" />
         <option value="$PROJECT_DIR$/src/actions/LoginAction.js" />
         <option value="$PROJECT_DIR$/src/actions/LogoutAction.js" />
         <option value="$PROJECT_DIR$/src/components/containers/LoginContainer.js" />
         <option value="$PROJECT_DIR$/src/reducers/LoginReducer.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" />
-        <option value="$PROJECT_DIR$/src/components/Movie/MovieTag.js" />
-        <option value="$PROJECT_DIR$/src/components/Movie/MovieTags.js" />
-        <option value="$PROJECT_DIR$/src/components/Movie/MovieButton.js" />
-        <option value="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" />
-        <option value="$PROJECT_DIR$/src/reducers/RootReducer.js" />
         <option value="$PROJECT_DIR$/src/components/containers/MovieListContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/style.css" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieReview.js" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieTag.js" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieReviewQuery.js" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieHeader.js" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieTags.js" />
+        <option value="$PROJECT_DIR$/src/components/Review/MovieReviewQuery.js" />
+        <option value="$PROJECT_DIR$/src/actions/AddReviewAction.js" />
+        <option value="$PROJECT_DIR$/src/reducers/ReviewReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Review/ReviewQuery.js" />
+        <option value="$PROJECT_DIR$/src/components/containers/ReviewContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/reducers/RootReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Movie/MovieButton.js" />
         <option value="$PROJECT_DIR$/src/components/Movie/MovieList.js" />
+        <option value="$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/Review/ReviewTable.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Review/ReviewTemplate.js" />
+        <option value="$PROJECT_DIR$/src/components/views/LoginScreen.js" />
+        <option value="$PROJECT_DIR$/src/reducers/MovieDataReducer.js" />
       </list>
     </option>
   </component>
@@ -231,8 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,96 +231,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="containers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="online-video-lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,11 +251,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src\components\Review" />
       <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src\components\Movie" />
       <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src\components" />
       <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src\components\views" />
       <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src" />
-      <recent name="C:\Users\yjacobow\Documents\private\exercise\online-video-lib\src\client" />
     </key>
   </component>
   <component name="RunManager">
@@ -446,6 +290,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -480,32 +330,33 @@
       <option name="presentableId" value="Default" />
       <updated>1512392221999</updated>
       <workItem from="1512392223789" duration="124863000" />
+      <workItem from="1512889010232" duration="26794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124863000" />
+    <option name="totallyTimeSpent" value="151657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19566368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19566368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -522,11 +373,89 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MOVIES_MOCK_DATA.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/MovieDataReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/MovieListContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,31 +463,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logo.svg" />
     <entry file="file://$PROJECT_DIR$/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,74 +489,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/LoginView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/LogoutAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/LoginAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/containers/LoginContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/LoginReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/src/components/views/LoginView.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Login.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/views/Header.js" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,47 +512,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MOVIES_MOCK_DATA.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/views/LoginScreen.js">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#45#86#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginHeader.js">
+    <entry file="file://$PROJECT_DIR$/src/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="506">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginForm.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/AddReviewAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/ReviewContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/ReviewReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/LoginContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/containers/MovieListContainer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/LoginAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/LogoutAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/CheckoutAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,116 +621,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/CheckoutAction.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login/LoginHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="78" column="65" lean-forward="false" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="60" column="12" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieTag.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#45#86#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="1" column="38" lean-forward="true" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieTags.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
-          <caret line="66" column="55" lean-forward="false" selection-start-line="66" selection-start-column="55" selection-end-line="66" selection-end-column="55" />
+        <state relative-caret-position="44">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MOVIES_MOCK_DATA.json">
+    <entry file="file://$PROJECT_DIR$/src/components/Review/ReviewQuery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="48" column="49" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/RootReducer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Review/ReviewTable.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="284">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
-            <element signature="e#45#84#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Review/ReviewTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/views/LoginScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/views/MovieSelectionScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="506">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <element signature="e#45#86#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/LoginReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/MovieDataReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/RootReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        <state relative-caret-position="1012">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/MovieDataReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="89" column="43" lean-forward="false" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/containers/MovieListContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Movie/MovieList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
