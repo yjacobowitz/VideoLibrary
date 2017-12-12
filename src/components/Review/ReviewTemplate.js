@@ -11,17 +11,8 @@ class ReviewTemplate extends Component {
         this.setState({value: event.target.value});
     }
 
-    saveReview(movieTitle, review){
-        let curUser = localStorage.getItem('currentUser');
-        let reviewEntry = {username: curUser, movieTitle: movieTitle, review: review};
-        let movieData = JSON.parse(localStorage.getItem('movieData'));
-        for(let i=0; i < movieData.length; i++){
-            if(movieData[i].movieTitle === movieTitle){
-                movieData[i].reviews.push(reviewEntry);
-                break;
-            }
-        }
-        localStorage.setItem('movieData', JSON.stringify(movieData));
+    saveReview(reviewInfo){
+        this.props.actions.addReview(reviewInfo)
         this.props.onCloseReview()
     }
 
@@ -38,7 +29,7 @@ class ReviewTemplate extends Component {
                     </Modal.Body>
                     <Modal.Footer className= "modalStyle">
                         <button className="btn btn-default"
-                                onClick={this.saveReview.bind(this, this.props.movieTitle, this.state.value)}>Save
+                                onClick={this.saveReview.bind(this, {movie:this.props.movieTitle, review:this.state.value})}>Save
                         </button>
                         <button className="btn btn-default" onClick={this.props.onCloseReview}>Cancel</button>
                     </Modal.Footer>

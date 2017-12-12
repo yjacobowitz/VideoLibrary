@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import login from './LoginReducer'
-var movieDataReducer = require('./MovieDataReducer')
+import addReview from './ReviewReducer'
+let movieDataReducer = require('./MovieDataReducer');
 
 let tagMovieList =  movieDataReducer.tagMovieList;
 let checkoutRes = movieDataReducer.checkoutRes;
@@ -8,7 +9,8 @@ let checkoutRes = movieDataReducer.checkoutRes;
 const rootReducer = combineReducers({
     tagMovieList,
     checkoutRes,
-    login
+    login,
+    addReview
 });
 
 export default rootReducer

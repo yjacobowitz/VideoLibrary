@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Modal, Button} from 'react-bootstrap'
-import ReviewTemplate from './ReviewTemplate'
+import ReviewContainer from './../containers/ReviewContainer'
 
 class ReviewQuery extends Component {
     constructor(){
@@ -35,8 +35,8 @@ class ReviewQuery extends Component {
                         <Button onClick={this.props.closeReviewModal}>No</Button>
                     </Modal.Footer>
                 </Modal>
-                <ReviewTemplate showReviewTemplate={this.state.showReviewTemplate} movieTitle={this.props.movieTitle}
-                                onCloseReview={this.onCloseReview.bind(this)}/>
+                <ReviewContainer showReviewTemplate={this.state.showReviewTemplate} movieTitle={this.props.movieTitle}
+                              onCloseReview={this.onCloseReview.bind(this)}/>
             </div>
         );
     }

@@ -10,13 +10,13 @@ import MOVIES_MOCK_DATA from './MOVIES_MOCK_DATA.json'
 let store = createStore(rootReducer);
 
 fetch('https://jsonplaceholder.typicode.com/users')
-    .then(results=>{
+    .then(results => {
         return results.json()
     })
     .then(data => {
         initiateUsers(data);
     })
-    .catch(function(error) {
+    .catch((error) => {
         console.log('Fetch Error :-S', error);
     });
 
@@ -24,7 +24,7 @@ function initiateUsers(data){
     if(JSON.parse(localStorage.getItem('users')))
         return;
     let users = {};
-    data.forEach(function(element){
+    data.forEach(element => {
         let user = Object.assign(element, {checkedOut:[]});
         users[user.username] = user;
     });
@@ -35,7 +35,7 @@ function initiateMovieList(){
     if(JSON.parse(localStorage.getItem('movieData')))
         return;
     let movieData = [];
-    MOVIES_MOCK_DATA.forEach(function(element){
+    MOVIES_MOCK_DATA.forEach(element => {
         let movieObj = {id: element.id, movieTitle: element.movie_title,
             movieTag: element.movie_tags.split("|"), checkout: false, reviews: []
         };
@@ -45,6 +45,7 @@ function initiateMovieList(){
 }
 
 initiateMovieList();
+
 render(
     <Provider store={store}>
         <App />
